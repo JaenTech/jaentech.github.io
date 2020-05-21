@@ -10,6 +10,8 @@
     .app {
       width: 100vw;
       height: 100vh;
+
+      animation: logoAnim 3s ease-in-out infinite alternate forwards;
     }
     .app svg {
       position: absolute;
@@ -18,6 +20,20 @@
       left: 50%;
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
+    }
+    @keyframes logoAnim {
+      0% {
+        opacity: 0.4;
+      }
+      40% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.4;
+      }
     }
   </style>
   <title>JaenTech²</title>
